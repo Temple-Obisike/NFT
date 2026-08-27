@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: hsl(217, 54%, 11%);
+        color: white;
+        min-height: 100vh;
+        min-width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 1rem;
+        font-family: "Outfit", sans-serif;
+      }
+      .container {
+        background-color: hsl(216, 50%, 16%);
+        border: 3px solid hsl(215, 32%, 27%);
+        border-radius: 1rem;
+        padding: 1.3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        max-width: 25rem;
+      }
+      #container__content {
+        display: flex;
+        flex-direction: column;
+        gap: 0.9rem;
+      }
+      #img-equilibrium {
+        width: 100%;
+        max-height: 20rem;
+        border-radius: 1rem;
+      }
+      #description {
+        color: hsl(215, 51%, 70%);
+        font-weight: 300;
+      }
+      #eth_and_no_days {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      #eth_and_no_days div {
+        display: flex;
+        gap: 0.3rem;
+      }
+      #days {
+        color: hsl(215, 51%, 70%);
+      }
+      #eth {
+        color: hsl(178, 100%, 50%);
+      }
+      #empty_div {
+        background-color: hsl(215, 32%, 27%);
+        padding: 0.5px;
+      }
+      #jules {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-weight: 300;
+      }
+      #jules img {
+        border-radius: 100%;
+        border: 2px solid white;
+      }
+      h1 {
+        color: white;
+        font-size: 1.3rem;
+        font-weight: 600;
+        align-self: flex-start;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="./images/image-equilibrium.jpg" alt="" id="img-equilibrium" />
+      <div id="container__content">
+        <h1>Equilibrium #3429</h1>
+        <p id="description">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+        <div id="eth_and_no_days">
+          <div id="eth">
+            <img src="./images/icon-ethereum.svg" alt="" />
+            <p>0.041ETH</p>
+          </div>
+          <div id="days">
+            <img src="./images/icon-clock.svg" alt="" />
+            <p>3 days left</p>
+          </div>
+        </div>
+        <div id="empty_div"></div>
+        <div id="jules">
+          <img src="./images/image-avatar.png" alt="" width="35" />
+          <p>
+            <span style="color: hsl(215, 51%, 70%)">Creation of</span> Julies
+            Wyvern
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      style="
+        font-size: 0.8rem;
+        box-shadow: 2px 2px;
+        border-radius: 0.5rem;
+        padding: 0.2rem;
+        align-self: center;
+      "
+    >
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by Ethemple.
+    </div>
+  </body>
+</html>
